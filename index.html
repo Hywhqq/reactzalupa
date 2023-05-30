@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link rel="shortcut icon" href="images/icon.svg" />
+    <script src="js/index.js" defer></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <title>React Sneakers</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <a href="index.html">
+            <img src="images/logo.svg" alt="header logo" />
+          </a>
+          <div class="header__logo-info">
+            <span>REACT SNEAKERS</span>
+            <p>Магазин лучших кроссовок</p>
+          </div>
+        </div>
+        <div class="header-account">
+          <div class="cart">
+            <img src="images/cart.svg" alt="cart" />
+            <p>1205 руб.</p>
+          </div>
+          <div class="wishlist_header">
+            <a href="wishlist.html">
+              <img src="images/wishlist.svg" alt="wishlist" />
+            </a>
+          </div>
+          <div class="account">
+            <a href="account.html">
+              <img src="images/account.svg" alt="account" />
+            </a>
+          </div>
+        </div>
+        <div class="burger">
+          <i class="burger__line"></i>
+          <i class="burger__line"></i>
+          <i class="burger__line"></i>
+        </div>
+      </div>
+    </header>
+    <div class="burger-menu">
+      <div class="Burger-modal">
+        <p>Cart</p>
+      </div>
+      <div class="Burger-modal">
+        <p>Wishlist</p>
+      </div>
+      <div class="Burger-modal">
+        <p>Account</p>
+      </div>
+    </div>
+    <div class="cart__modal">
+      <div class="cart__wrapper">
+        <h5>Корзина</h5>
+        <div class="cart-items"></div>
+        <div class="cart-info">
+          <div class="cart-info_order">
+            <p>Итого:</p>
+            <div class="cart_line"></div>
+            <span class="total-price">21 498 руб. </span>
+          </div>
+          <div class="cart-info_order">
+            <p>Налог 5%:</p>
+            <div class="cart_line"></div>
+            <span class="total-tax">1074 руб. </span>
+          </div>
+          <button class="cart-btn">Оформить заказ</button>
+        </div>
+      </div>
+    </div>
+    <div class="cart__modal_success">
+      <div class="cart__wrapper">
+        <h5>Корзина</h5>
+        <div class="cart-info">
+          <img src="images/cart_successful.svg" alt="Done" />
+          <div class="cart-info-details">
+            <span> Заказ оформлен! </span>
+            <p>Ваш заказ #18 скоро будет передан курьерской доставке</p>
+          </div>
+          <button class="cart-btn-successful-close">Вернуться назад</button>
+        </div>
+      </div>
+    </div>
+    <section class="section section--hero">
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <img
+              src="images/slider-hero_sl1.png"
+              alt="slider img"
+              style="width: 100%"
+            />
+            <div class="slide-text-content">
+              <p>
+                <span>Stan Smith</span>, <br />
+                Forever!
+              </p>
+              <button>КУПИТЬ</button>
+            </div>
+          </div>
+          <div class="swiper-slide">test</div>
+          <div class="swiper-slide">Slide 3</div>
+          ...
+        </div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev">
+          <img src="images/slider_arrow_l.svg" alt="left" />
+        </div>
+        <div class="swiper-button-next">
+          <img src="images/slider_arrow_r.svg" alt="right" />
+        </div>
+      </div>
+    </section>
+    <main>
+      <div class="container">
+        <div class="items_header">
+          <h3>Все кроссовки</h3>
+          <input type="search" class="search-main" placeholder="Поиск..." />
+        </div>
+        <div class="items">
+          <div class="item">
+            <div class="wishlist">
+              <img src="images/wishlist_default.svg" alt="add to wishlist" />
+            </div>
+            <div class="wishlist-new">
+              <img src="images/wishlist-active.svg" alt="in wishlist" />
+            </div>
+            <div class="item__img">
+              <img
+                src="images/item1.png"
+                alt="Мужские Кроссовки Nike Blazer Mid Suede"
+              />
+            </div>
+            <h2>Мужские Кроссовки Nike Blazer Mid Suede</h2>
+            <div class="item-purchase">
+              <div class="price" data-price="12999">
+                <p>
+                  <span>Цена:</span><br />
+                  12 999 Руб.
+                </p>
+              </div>
+              <div class="buy-button">
+                <img src="images/add_to_cart_default.svg" alt="add to cart" />
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="wishlist">
+              <img src="images/wishlist_default.svg" alt="add to wishlist" />
+            </div>
+            <div class="item__img">
+              <img
+                src="images/item2.png"
+                alt="Мужские Кроссовки Nike Blazer Mid Suede"
+              />
+            </div>
+            <h2>Мужские Кроссовки Nike Air Max 270</h2>
+            <div class="item-purchase">
+              <div class="price" data-price="12999">
+                <p>
+                  <span>Цена:</span><br />
+                  12 999 Руб.
+                </p>
+              </div>
+              <div class="buy-button">
+                <img src="images/add_to_cart_default.svg" alt="add to cart" />
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="wishlist">
+              <img src="images/wishlist_default.svg" alt="add to wishlist" />
+            </div>
+            <div class="item__img">
+              <img
+                src="images/item3.png"
+                alt="Мужские Кроссовки Nike Blazer Mid Suede"
+              />
+            </div>
+            <h2>Мужские Кроссовки Nike Blazer Mid Suede</h2>
+            <div class="item-purchase">
+              <div class="price" data-price="12999">
+                <p>
+                  <span>Цена:</span><br />
+                  12 999 Руб.
+                </p>
+              </div>
+              <div class="buy-button">
+                <img src="images/add_to_cart_default.svg" alt="add to cart" />
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="wishlist">
+              <img src="images/wishlist_default.svg" alt="add to wishlist" />
+            </div>
+            <div class="item__img">
+              <img
+                src="images/item4.png"
+                alt="Мужские Кроссовки Nike Blazer Mid Suede"
+              />
+            </div>
+            <h2>Кроссовки Puma X Aka Boku Future Rider</h2>
+            <div class="item-purchase">
+              <div class="price" data-price="12999">
+                <p>
+                  <span>Цена:</span><br />
+                  12 999 Руб.
+                </p>
+              </div>
+              <div class="buy-button">
+                <img src="images/add_to_cart_default.svg" alt="add to cart" />
+              </div>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="wishlist">
+              <img src="images/wishlist_default.svg" alt="add to wishlist" />
+            </div>
+            <div class="item__img">
+              <img
+                src="images/item5.png"
+                alt="Мужские Кроссовки Nike Blazer Mid Suede"
+              />
+            </div>
+            <h2>Мужские Кроссовки Under Armour Curry 8</h2>
+            <div class="item-purchase">
+              <div class="price" data-price="12999">
+                <p>
+                  <span>Цена:</span><br />
+                  12 999 Руб.
+                </p>
+              </div>
+              <div class="buy-button">
+                <img src="images/add_to_cart_default.svg" alt="add to cart" />
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="wishlist">
+              <img src="images/wishlist_default.svg" alt="add to wishlist" />
+            </div>
+            <div class="item__img">
+              <img
+                src="images/item6.png"
+                alt="Мужские Кроссовки Nike Blazer Mid Suede"
+              />
+            </div>
+            <h2>Мужские Кроссовки Nike Kyrie 7</h2>
+            <div class="item-purchase">
+              <div class="price" data-price="12999">
+                <p>
+                  <span>Цена:</span><br />
+                  12 999 Руб.
+                </p>
+              </div>
+              <div class="buy-button">
+                <img src="images/add_to_cart_default.svg" alt="add to cart" />
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="wishlist">
+              <img src="images/wishlist_default.svg" alt="add to wishlist" />
+            </div>
+            <div class="item__img">
+              <img
+                src="images/item7.png"
+                alt="Мужские Кроссовки Nike Blazer Mid Suede"
+              />
+            </div>
+            <h2>Мужские Кроссовки Jordan Air Jordan 11</h2>
+            <div class="item-purchase">
+              <div class="price" data-price="12999">
+                <p>
+                  <span>Цена:</span><br />
+                  12 999 Руб.
+                </p>
+              </div>
+              <div class="buy-button">
+                <img src="images/add_to_cart_default.svg" alt="add to cart" />
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="wishlist">
+              <img src="images/wishlist_default.svg" alt="add to wishlist" />
+            </div>
+            <div class="item__img">
+              <img
+                src="images/item8.png"
+                alt="Мужские Кроссовки Nike Blazer Mid Suede"
+              />
+            </div>
+            <h2>Мужские Кроссовки Nike LeBron XVIII</h2>
+            <div class="item-purchase">
+              <div class="price" data-price="12999">
+                <p>
+                  <span>Цена:</span><br />
+                  12 999 Руб.
+                </p>
+              </div>
+              <div class="buy-button">
+                <img src="images/add_to_cart_default.svg" alt="add to cart" />
+              </div>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="wishlist">
+              <img src="images/wishlist_default.svg" alt="add to wishlist" />
+            </div>
+            <div class="item__img">
+              <img
+                src="images/item9.png"
+                alt="Мужские Кроссовки Nike Blazer Mid Suede"
+              />
+            </div>
+            <h2>Мужские Кроссовки Nike Lebron XVIII Low</h2>
+            <div class="item-purchase">
+              <div class="price" data-price="12999">
+                <p>
+                  <span>Цена:</span><br />
+                  12 999 Руб.
+                </p>
+              </div>
+              <div class="buy-button">
+                <img src="images/add_to_cart_default.svg" alt="add to cart" />
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="wishlist">
+              <img src="images/wishlist_default.svg" alt="add to wishlist" />
+            </div>
+            <div class="item__img">
+              <img
+                src="images/item1.png"
+                alt="Мужские Кроссовки Nike Blazer Mid Suede"
+              />
+            </div>
+            <h2>Мужские Кроссовки Nike Blazer Mid Suede</h2>
+            <div class="item-purchase">
+              <div class="price" data-price="12999">
+                <p>
+                  <span>Цена:</span><br />
+                  12 999 Руб.
+                </p>
+              </div>
+              <div class="buy-button">
+                <img src="images/add_to_cart_default.svg" alt="add to cart" />
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="wishlist">
+              <img src="images/wishlist_default.svg" alt="add to wishlist" />
+            </div>
+            <div class="item__img">
+              <img
+                src="images/item4.png"
+                alt="Мужские Кроссовки Nike Blazer Mid Suede"
+              />
+            </div>
+            <h2>Кроссовки Puma X Aka Boku Future Rider</h2>
+            <div class="item-purchase">
+              <div class="price" data-price="12999">
+                <p>
+                  <span>Цена:</span><br />
+                  12 999 Руб.
+                </p>
+              </div>
+              <div class="buy-button">
+                <img src="images/add_to_cart_default.svg" alt="add to cart" />
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="wishlist">
+              <img src="images/wishlist_default.svg" alt="add to wishlist" />
+            </div>
+            <div class="item__img">
+              <img
+                src="images/item10.png"
+                alt="Мужские Кроссовки Nike Blazer Mid Suede"
+              />
+            </div>
+            <h2>Мужские Кроссовки Nike Kyrie Flytrap IV</h2>
+            <div class="item-purchase">
+              <div class="price" data-price="12999">
+                <p>
+                  <span>Цена:</span><br />
+                  12 999 Руб.
+                </p>
+              </div>
+              <div class="buy-button">
+                <img src="images/add_to_cart_default.svg" alt="add to cart" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
